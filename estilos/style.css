@@ -1,0 +1,22 @@
+/*
+Reglas:
+    Selector
+        Declaracion
+            propiedad : valor
+
+Selector de Etiqueta:
+    header, footer, article
+
+Selector desendente:
+body header div nav li li a
+
+Selector de clase:
+.nombreClase
+
+Selector id:
+#identificador unico
+*/
+
+header {
+    background: red;
+}
