@@ -17,6 +17,17 @@ Selector id:
 #identificador unico
 */
 
-header {
+/* header {
     background: red;
+} */
+
+/* font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Fjalla One', sans-serif; */
+/*IMPORTANDO UNA FUENTE DESDE GOOGLE FONTS"*/
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap');
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
 }
