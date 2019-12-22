@@ -16,7 +16,8 @@ Selector de clase:
 Selector id:
 #identificador unico
 Modelo de caja:
-    box-sizeing: border-box
+    box-sizeing: border-box es para que respete el tamano que se le asigna, aun cuando se le agregue mas margen o padding se
+    redimenciones para conservar su margen
 */
 
 
@@ -80,30 +81,59 @@ body {
     margin: 0px;
 }
 
-.flexbox {
+/* .flexbox {
     border: 2px solid lightgreen;
     display: flex;
     flex-wrap: wrap;
     height: 300px;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .flexbox .box {
     border: 1px solid red;
-    width:  50px;
-    height: 50px;
+    width:  100px;
+    height: 100px;
     margin: 5px;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .header {
     background-color: #1b2127;
+    display: flex;
+    height: 70px;
+    justify-content: space-between; /*Deja espacio entre los elemtos que enten dentro de header(en este caso)*/
+    align-items: center;
+
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+/* .navigation {
+    display: flex;
+    justify-self: flex-end;
+} */
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header ul li {
+    margin: 15px;
 }
 
 .header a {
     text-decoration: none;
     color: #FFF;
+    font-weight: bold;
 }
 
 .hero {
@@ -113,13 +143,15 @@ body {
     background-repeat: no-repeat;
     background-position-x: right;
     background-color: #1b2127;
+    display: flex;
+    align-items: center;
 }
 
 h1 {
-    line-height: 1.5;
+    margin: 0px;
+    padding: 0px;
     font-size: 40px;
-    font-weight: normal;
-    /*normal equivale a un peso de 400, bold(negrita) equivale a un peso de 600*/
+    font-weight: normal;/*normal equivale a un peso de 400, bold(negrita) equivale a un peso de 600*/
     letter-spacing: -.2px;
     text-transform: capitalize;
     color: white
@@ -129,7 +161,15 @@ h1 strong {
     color: #026fff;
 }
 
-h2,
+h2 {
+    text-transform: uppercase;
+    color: #026fff;
+    font-weight: bold;
+    font-size: 24;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 h3,
 h4,
 h5,
@@ -139,6 +179,9 @@ h6 {
 
 .portfolio {
     background-color: #fafafa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project {
@@ -146,18 +189,79 @@ h6 {
     border-bottom: 10px solid green;
     border-left: 10px solid blue;
     border-right: 10px solid yellow; */
+    /* margin: 10px; */
     border: 1px solid gray;
-    border-radius: 10px;
-    margin: 10px;
+    border-radius: 5px;
     margin-bottom: 15px;
     padding: 20px;
+    padding-right: 0;
     background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .project-div-text {
     width: 500px;
+    /* flex-shrink: 0;
+    box-sizing: border-box; */
 }
 
+.project-title{
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+.project-course {
+    color: gray;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.project-date {
+    margin: 5px 0;
+    color: gray;
+}
+
+.project-date strong {
+    color: black;
+}
+
+.project-url {
+    margin: 5px 0;
+}
+
+.project-url a {
+    color: gray
+}
 .project-imageContainer {
     width: 500px;
+    /* flex-shrink: 0;
+    box-sizing: border-box; */
+}
+
+.footer {
+    background-color: #1b2127;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    font-weight: bold;
+}
+
+.footer p {
+    margin: 0px 10px;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer a {
+    color: white;
 }
