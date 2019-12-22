@@ -78,7 +78,14 @@ h6 {
     font-family: 'Fjalla One', sans-serif;
 }
 
-
+.project {
+    /* border-top: 10px solid red;
+    border-bottom: 10px solid green;
+    border-left: 10px solid blue;
+    border-right: 10px solid yellow; */
+    border: 1px solid gray;
+    border-radius: 10px;
+}
 
 .project-div-text {
     width: 500px;
