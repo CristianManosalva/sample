@@ -41,11 +41,60 @@ Tipos de display:
     inline-block: no ocupa todo el ancho, pero tambien respeta el tamano que se le haya asignado
 */
 
+/* Propiedades de flex:
+    flex-shrink: se usa en los hijos y es para establecer que tanto se permiten encoger, escala de 0-1 
+    flex-wrap: propiedad del padre, cuando el padre se llena de manera horizontal, el siguiente elemento cae (wrap) a la siguiente fila
+*/
+
+/*
+ALINEADO DE ELEMTOS CON FLEXBOX
+.flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+} 
+
+.box {
+    flex-shrink: 0;    
+}
+
+.box_1 {
+    align-self: flex-start;
+}
+
+.box_2 {
+    align-self: center;
+}
+
+.box_3 {
+    align-self: flex-end;
+}`
+*/
+
 /* @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
+}
+
+.flexbox {
+    border: 2px solid lightgreen;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    align-items: center;
+}
+
+.flexbox .box {
+    border: 1px solid red;
+    width:  50px;
+    height: 50px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .header {
