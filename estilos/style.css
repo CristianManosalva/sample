@@ -36,6 +36,7 @@ Colores:
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
 }
 
 .header {
@@ -78,6 +79,10 @@ h6 {
     font-family: 'Fjalla One', sans-serif;
 }
 
+.portfolio {
+    background-color: #fafafa;
+}
+
 .project {
     /* border-top: 10px solid red;
     border-bottom: 10px solid green;
@@ -85,6 +90,10 @@ h6 {
     border-right: 10px solid yellow; */
     border: 1px solid gray;
     border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;
 }
 
 .project-div-text {
