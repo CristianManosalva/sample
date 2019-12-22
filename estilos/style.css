@@ -15,6 +15,8 @@ Selector de clase:
 
 Selector id:
 #identificador unico
+Modelo de caja:
+    box-sizeing: border-box
 */
 
 
@@ -30,6 +32,13 @@ Colores:
     gris claro = #626262
     background gris = #1b2127
     celeste = #026fff
+*/
+
+/*
+Tipos de display:
+    block: ocupa todo el ancho disponible
+    inline: ocupa el ancho dependiendo de su contenido, pero no respeta tamanos asignados por el usuario
+    inline-block: no ocupa todo el ancho, pero tambien respeta el tamano que se le haya asignado
 */
 
 /* @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap'); */
