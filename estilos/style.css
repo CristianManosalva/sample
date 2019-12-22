@@ -78,7 +78,9 @@ ALINEADO DE ELEMTOS CON FLEXBOX
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    margin: 0px;
+    margin: 0px auto;
+    width: 1000px;
+    background-color: black;
 }
 
 /* .flexbox {
@@ -178,7 +180,7 @@ h6 {
 }
 
 .portfolio {
-    background-color: #fafafa;
+    background-color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -240,8 +242,159 @@ h6 {
 }
 .project-imageContainer {
     width: 500px;
+    margin: 16px 5px;
+    /* margin: 0; */
     /* flex-shrink: 0;
     box-sizing: border-box; */
+}
+
+.eventosSection{
+    padding: 20px;
+    background-color: #fff;
+}
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    margin: 20px;
+    margin-left: 0px;
+    border-radius: 10px;
+    flex-shrink: 0; /*Determina que tanto el elemento se deja redimencionar*/
+    /* overflow: hidden; Sirve para ocultar las cosas que salgan de las dimenciones de este elemento*/
+    background-color: #f4fbff;
+    box-sizing: border-box;
+}
+
+.event-imagen-container {
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: inherit;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.event-image {
+    /* margin: 0;
+    padding: 0; */
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.event-detail {
+    background-color: white;
+    /* height: 300px;
+    width: 350px; */
+    margin: 20px 40px;
+    margin-top: -40px;
+    /* margin-bottom: 20px; */
+    padding: 20px;
+    /* box-sizing: border-box; */
+    text-align: center;
+}
+
+.event-description {
+    text-align: left ;
+}
+
+.event-url {
+    border: 1px solid #056fff;
+    padding: 5px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #056fff;
+    font-weight: bold;
+}
+
+.contactSection {
+    background-color: #056fff;
+    height: 150px;
+    padding: 20px 40px;
+    padding-bottom: 0px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+.contactSection h2 {
+    color: #FFF;
+    /* padding-top: 40px; */
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.social {
+    border: 1px solid red;
+    height: 50px;    
+}
+
+.social-link {
+    display: inline-block;
+    /* border: 1px solid white; */
+    height: 50px;
+    width: 50px;
+    background-size: 50px 50px;
+    margin: 0px 10px;
+}
+
+.social-link.t{
+    background-image: url('../pictures/twitter.svg');
+    
+}
+.social-link.f{
+    background-image: url('../pictures/facebook.svg');
+}
+.social-link.g{
+    background-image: url('../pictures/github.svg');
+}
+.social-link.i{
+    background-image: url('../pictures/instagram.svg');
+}
+
+.form-email {
+    border: 1px solid red;
+    /* display: flex;
+    flex-direction: column; */
+}
+.form-email input{
+    border: 1px solid gray;
+    background-image: url('../pictures/envelope.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+    height: 30px;
+    color: gray;
+    border-radius: 5px;
+    padding-left: 40px; 
+}
+
+.form-email button {
+    display: block;
+    margin: 0;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7px 40px;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 .footer {
@@ -252,6 +405,7 @@ h6 {
     justify-content: space-between;
     height: 60px;
     font-weight: bold;
+    
 }
 
 .footer p {
