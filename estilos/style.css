@@ -78,9 +78,9 @@ ALINEADO DE ELEMTOS CON FLEXBOX
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    margin: 0px auto;
-    width: 1000px;
-    background-color: black;
+    margin: 0px;
+    /* width: 1000px;
+    background-color: black; */
 }
 
 /* .flexbox {
@@ -140,13 +140,14 @@ body {
 
 .hero {
     height: 300px;
-    background-image: url('../pictures/hero.jpg');
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
     background-color: #1b2127;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.hero img {
+    object-fit: cover;
 }
 
 h1 {
@@ -181,17 +182,16 @@ h6 {
 
 .portfolio {
     background-color: white;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
 }
 
+.portfolio h2 {
+    padding-left: 20px;
+}
+
 .project {
-    /* border-top: 10px solid red;
-    border-bottom: 10px solid green;
-    border-left: 10px solid blue;
-    border-right: 10px solid yellow; */
-    /* margin: 10px; */
     border: 1px solid gray;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -249,9 +249,14 @@ h6 {
 }
 
 .eventosSection{
-    padding: 20px;
+    /* padding: 20px; */
     background-color: #fff;
 }
+
+.eventosSection h2 {
+    padding-left: 20px;
+}
+
 .event-list {
     display: flex;
     flex-wrap: wrap;
@@ -262,10 +267,10 @@ h6 {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 460px;
     align-items: center;
     margin: 20px;
-    margin-left: 0px;
+    /* margin-left: 0px; */
     border-radius: 10px;
     flex-shrink: 0; /*Determina que tanto el elemento se deja redimencionar*/
     /* overflow: hidden; Sirve para ocultar las cosas que salgan de las dimenciones de este elemento*/
@@ -320,8 +325,14 @@ h6 {
 .contactSection {
     background-color: #056fff;
     height: 150px;
-    padding: 20px 40px;
-    padding-bottom: 0px;
+}
+
+.contactSection h2 {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #FFF;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .contact-section {
@@ -331,16 +342,11 @@ h6 {
     
 }
 
-.contactSection h2 {
-    color: #FFF;
-    /* padding-top: 40px; */
-    margin: 0px;
-    margin-bottom: 20px;
-}
-
 .social {
-    border: 1px solid red;
-    height: 50px;    
+    /* border: 1px solid red; */
+    height: 50px;
+    margin: auto 0;
+    margin-right: 40px;   
 }
 
 .social-link {
@@ -354,7 +360,6 @@ h6 {
 
 .social-link.t{
     background-image: url('../pictures/twitter.svg');
-    
 }
 .social-link.f{
     background-image: url('../pictures/facebook.svg');
@@ -367,7 +372,8 @@ h6 {
 }
 
 .form-email {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    margin-left: 40px;
     /* display: flex;
     flex-direction: column; */
 }
@@ -418,4 +424,16 @@ h6 {
 
 .footer a {
     color: white;
+}
+
+.container {
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+
+    display: inherit;
+    height: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-direction: inherit;
 }
